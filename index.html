@@ -1,13 +1,16 @@
 ---
-layout: presentation
+layout: first git
 ---
 
-{% for post in site.posts reversed %}
-	{% include slide.html %}
-	<div class="page-break"></div>
-{% endfor %}
-{% unless site.simple-slideshow %}
-{% if site.overview %}
-<section id="overview" class="step" {% for attr in site.overview-data %} data-{{attr[0]}}="{{attr[1]}}"{% endfor %}></section>
-{% endif %}
-{% endunless %}
+<html>
+<body>
+<form name="login" class="form">
+        <p class="title">Client Dashboard</p>
+        <p class="login-description">This dashboard allows you to manage your project and files</p>
+        <input type="text" name="userid" placeholder="Username" class="text-field"/>
+        <input type="password" name="pswrd" placeholder="Password" class="text-field"/>
+        <input type="submit" class="button" onclick="check(this.form)" value="Login"/>
+</form>
+
+</body>
+</html>
